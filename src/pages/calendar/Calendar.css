@@ -1,323 +1,321 @@
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 @keyframes logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    a:nth-of-type(2) .logo {
-        animation: logo-spin infinite 20s linear;
-    }
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
 .card {
-    padding: 2em;
+  padding: 2em;
 }
 
 .read-the-docs {
-    color: #888;
+  color: #888;
 }
 
 h1 {
-
 }
 
 select {
-    width: 200px;
+  width: 200px;
 }
 
-
-
 table.calendar {
-
-    border-collapse: collapse;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
+  border-collapse: collapse;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar thead {
-    background-color: #5A5A5A30;
-    color: white;
-    margin-bottom: 3px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
+  color: white;
+  margin-bottom: 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar thead th {
-    font-weight: lighter;
-    padding: 10px 3px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
+  font-weight: lighter;
+  padding: 10px 3px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar thead th.bolder {
-    font-weight: bold;
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
-
+  font-weight: bold;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 th:nth-of-type(8n) {
-    font-weight: bold !important;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-weight: bold !important;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-th:not(:nth-of-type(8n+1))
-{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    border-top: 2px solid rgba(255, 255, 255, 0.2);
+th:not(:nth-of-type(8n + 1)) {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+  background-color: #5a5a5a30;
 }
 
-th:last-child
-{
-    border-right: 2px solid rgba(255, 255, 255, 0.2);
+th:last-child {
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 table.calendar tbody {
-    font-size: 1em;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-size: 1em;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 table.calendar td {
-    text-align: center;
-    padding: 8px;
-    cursor: pointer;
-    border: 1px solid rgba(185, 185, 185, 0.13);
-    min-width: 15px;
+  text-align: center;
+  padding: 8px;
+  cursor: pointer;
+  min-width: 15px;
 }
 
+table.calendar td:not(:first-child) {
+  border: 1px solid rgba(185, 185, 185, 0.13);
+}
 
 table.calendar td.month-name {
-    font-weight: bold;
-    text-align: left;
-    cursor: default;
+  font-weight: bold;
+  text-align: left;
+  cursor: default;
 }
 
 table.calendar td.prev-month,
 table.calendar td.next-month {
-    color: transparent;
-    cursor: default;
-    pointer-events: none;
+  color: transparent;
+  cursor: default;
+  pointer-events: none;
 }
 
 table.calendar td.week-separator {
-    pointer-events: none;
-    padding: 0;
-    width: 16px;
-    min-width: 16px;
-    max-width: 16px;
-    border: none;
-
+  pointer-events: none;
+  padding: 0;
+  width: 16px;
+  min-width: 16px;
+  max-width: 16px;
+  border: none;
 }
 
 th.week-separator {
-    border-left: 2px solid rgba(255, 255, 255, 0.2);
-    border-bottom: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.2);
+  border-bottom: none;
 }
 
 table.calendar td.winter {
-    background-color: rgba(159, 220, 249, 0.32);
+  background-color: rgba(159, 220, 249, 0.32);
 }
-table.calendar td.spring {
-    background-color: rgba(145, 212, 110, 0.32);
-}
-table.calendar td.summer {
-    background-color: rgba(255, 232, 91, 0.32);
-}
-table.calendar td.autumn {
-    background-color: rgba(246, 151, 60, 0.32);
-}
-table.calendar td.holidays {
-    font-weight: bolder;
-    color: #F44336;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
 
+table.calendar td.spring {
+  background-color: rgba(145, 212, 110, 0.32);
+}
+
+table.calendar td.summer {
+  background-color: rgba(255, 232, 91, 0.32);
+}
+
+table.calendar td.autumn {
+  background-color: rgba(246, 151, 60, 0.32);
+}
+
+table.calendar td.holidays {
+  font-weight: bolder;
+  color: #e57373;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar td.extendible {
-    font-weight: bold;
-    color: #42A5F5;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
-
+  font-weight: bolder;
+  color: #f9a825;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar td.weekend {
-    font-weight: bolder;
-    color: #F44336;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
-
+  font-weight: bolder;
+  color: #e57373;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: always;
 }
 
 table.calendar td.bolder {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 table.calendar td.winter.range,
 table.calendar td.winter.selected {
-    background-color: rgba(159, 220, 249, 1);
-    font-weight: bold;
+  background-color: rgba(159, 220, 249, 1);
+  font-weight: bold;
 }
+
 table.calendar td.spring.range,
 table.calendar td.spring.selected {
-    background-color: rgba(145, 212, 110, 1);
-    font-weight: bold;
+  background-color: rgba(145, 212, 110, 1);
+  font-weight: bold;
 }
+
 table.calendar td.summer.range,
 table.calendar td.summer.selected {
-    background-color: rgba(255, 232, 91, 1);
-    font-weight: bold;
+  background-color: rgba(255, 232, 91, 1);
+  font-weight: bold;
 }
+
 table.calendar td.autumn.range,
 table.calendar td.autumn.selected {
-    background-color: rgba(246, 151, 60, 1);
+  background-color: rgba(246, 151, 60, 1);
 }
 
 div.calendar-controls {
-    margin: 5px auto;
-    display: table;
-    font-size: 25px;
-    line-height: 35px;
+  margin: 5px auto;
+  display: table;
+  font-size: 25px;
+  line-height: 35px;
 }
 
 div.calendar-controls div {
-    display: inline;
+  display: inline;
 }
 
 div.calendar-controls .current-year {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 
 div.calendar-controls .control {
-    font-weight: bolder;
-    color: #323232;
-    font-size: 0.8em;
-    cursor: pointer;
+  font-weight: bolder;
+  color: #323232;
+  font-size: 0.8em;
+  cursor: pointer;
 }
 
 div.calendar-controls .today {
-    position: absolute;
-    right: 15px;
-    line-height: 35px;
-    font-size: 0.6em;
-    text-transform: uppercase;
+  position: absolute;
+  right: 15px;
+  line-height: 35px;
+  font-size: 0.6em;
+  text-transform: uppercase;
 }
 
 /* Demo */
 
 div#calendar {
-    position: relative;
-    border-radius: 5px;
-    border: 1px solid #5A5A5A;
-    background-color: white;
-    overflow: hidden;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+  position: relative;
+  border-radius: 5px;
+  border: 1px solid #5a5a5a;
+  background-color: white;
+  overflow: hidden;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 div#root {
-    display: table;
-    margin: 50px auto;
+  display: table;
+  margin: 50px auto;
 }
 
-h2,h3,h4,h5 {
-    text-align: center;
-    color: #404040;
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+  color: #404040;
 }
-
-
-
 
 a.demoLink {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 div.options {
-    border: 1px solid #B9B9B9;
-    border-radius: 5px;
-    padding: 10px 15px;
-    margin-top: 30px;
+  border: 1px solid #b9b9b9;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 30px;
 }
 
 div.options select {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 div.options .half {
-    width: 48%;
-    display: inline-table;;
+  width: 48%;
+  display: inline-table;
 }
 
 div.options textarea {
-    height: 320px;
-    width: 100%;
-    resize: vertical;
-    padding: 5px;
+  height: 320px;
+  width: 100%;
+  resize: vertical;
+  padding: 5px;
 }
 
 div.options textarea.error {
-    border-color: darkred;
-    box-shadow: darkred 0 0 5px inset;
+  border-color: darkred;
+  box-shadow: darkred 0 0 5px inset;
 }
 
 div.options .half a {
-    font-size: 0.7em;
-    margin-left: 10px;
+  font-size: 0.7em;
+  margin-left: 10px;
 }
 
 p.interactiveDemo {
-    font-style: italic;
+  font-style: italic;
 }
 
 p.interactiveDemo i {
-    background-color: #E2E2E2;
-    font-style: normal;
-    font-family: monospace;
-    padding: 2px 5px;
+  background-color: #e2e2e2;
+  font-style: normal;
+  font-family: monospace;
+  padding: 2px 5px;
 }
 
 * > * {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-smooth: always;
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  font-smooth: always !important;
+  -ms-transform: translateZ(0) !important;
+  transform: translateZ(0) !important;
 }
