@@ -43,7 +43,7 @@ const MaxOffLengthPicker: React.FC<MaxOffLengthPickerProps> = ({
         justifyContent: "center",
       }}
     >
-      <p>Select max days off at a stretch</p>
+      <p>Max days off at a stretch:</p>
       <div
         style={{
           width: "100%",

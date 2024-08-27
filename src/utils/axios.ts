@@ -1,6 +1,5 @@
 import axios from "axios";
 
-//eslint-disable-next-line @typescript-eslint/no-unused-vars
 const axiosInstance = axios.create({
   maxBodyLength: Infinity,
   baseURL: "https://calendarific.com/api/v2",
